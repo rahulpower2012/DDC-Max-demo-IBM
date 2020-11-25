@@ -22,10 +22,23 @@ RESTPLUS_MASK_SWAGGER = False
 SWAGGER_UI_DOC_EXPANSION = 'none'
 
 # API metadata
-API_TITLE = 'MAX'
-API_DESC = 'An API for serving models'
+API_TITLE = 'MAX FASHION MNIST - Fashion and Clothing items Classification'
+API_DESC = 'An API for Classify images of clothing pieces'
 API_VERSION = '0.1'
 
 # default model
-MODEL_NAME = ''
+MODEL_NAME = 'fashion_mnist.h5'
 DEFAULT_MODEL_PATH = 'assets/{}'.format(MODEL_NAME)
+
+CLASS_DIGIT_TO_LABEL = {
+  0: "T-shirt/top",
+  1: "Trouser",
+  2: "Pullover",
+  3: "Dress",
+  4: "Coat",
+  5: "Sandal",
+  6: "Shirt",
+  7: "Sneaker",
+  8: "Bag",
+  9: "Ankle boot"
+}
